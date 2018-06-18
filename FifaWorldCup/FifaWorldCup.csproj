@@ -190,8 +190,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CitiesController.cs" />
+    <Compile Include="Controllers\GroupsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StadiumsController.cs" />
+    <Compile Include="Controllers\TeamsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -199,10 +203,22 @@
     <Compile Include="Migrations\201806181201169_Kreirana baza.Designer.cs">
       <DependentUpon>201806181201169_Kreirana baza.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806181243036_AddedClasses.cs" />
+    <Compile Include="Migrations\201806181243036_AddedClasses.Designer.cs">
+      <DependentUpon>201806181243036_AddedClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181248366_Dbset.cs" />
+    <Compile Include="Migrations\201806181248366_Dbset.Designer.cs">
+      <DependentUpon>201806181248366_Dbset.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Group.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Stadium.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -263,6 +279,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Groups\Create.cshtml" />
+    <Content Include="Views\Groups\Delete.cshtml" />
+    <Content Include="Views\Groups\Details.cshtml" />
+    <Content Include="Views\Groups\Edit.cshtml" />
+    <Content Include="Views\Groups\Index.cshtml" />
+    <Content Include="Views\Cities\Create.cshtml" />
+    <Content Include="Views\Cities\Delete.cshtml" />
+    <Content Include="Views\Cities\Details.cshtml" />
+    <Content Include="Views\Cities\Edit.cshtml" />
+    <Content Include="Views\Cities\Index.cshtml" />
+    <Content Include="Views\Stadium\Create.cshtml" />
+    <Content Include="Views\Stadium\Delete.cshtml" />
+    <Content Include="Views\Stadium\Details.cshtml" />
+    <Content Include="Views\Stadium\Edit.cshtml" />
+    <Content Include="Views\Stadium\Index.cshtml" />
+    <Content Include="Views\Teams\Create.cshtml" />
+    <Content Include="Views\Teams\Delete.cshtml" />
+    <Content Include="Views\Teams\Details.cshtml" />
+    <Content Include="Views\Teams\Edit.cshtml" />
+    <Content Include="Views\Teams\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -283,6 +319,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806181201169_Kreirana baza.resx">
       <DependentUpon>201806181201169_Kreirana baza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181243036_AddedClasses.resx">
+      <DependentUpon>201806181243036_AddedClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181248366_Dbset.resx">
+      <DependentUpon>201806181248366_Dbset.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
